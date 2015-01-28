@@ -1,0 +1,27 @@
+{
+  "name": "react-dialog",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/pburtchaell/react-dialog"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "dialog"
+  ],
+  "author": "Patrick Burtchaell <patrick@pburtchaell.com> (http://pburtchaell.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pburtchaell/react-dialog/issues"
+  },
+  "homepage": "https://github.com/pburtchaell/react-dialog",
+  "dependencies": {
+    "react": "^0.12.2"
+  }
+}
