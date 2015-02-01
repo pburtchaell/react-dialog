@@ -1,4 +1,4 @@
-# react-dialog [![Dependency Status](https://david-dm.org/pburtchaell/react-dialog.svg)](https://david-dm.org/pburtchaell/react-dialog)
+# react-dialog [![npm version](https://badge.fury.io/js/react-dialog.svg)](http://badge.fury.io/js/react-dialog) [![Dependency Status](https://david-dm.org/pburtchaell/react-dialog.svg)](https://david-dm.org/pburtchaell/react-dialog)
 
 *Warning: this is a major version zero release. The component is still under development and the API may change at any time. Please report issues and bugs [on GitHub](https://github.com/pburtchaell/react-dialog/issues).*
 
