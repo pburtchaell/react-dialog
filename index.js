@@ -5,12 +5,16 @@ var classes = require('react-classes');
 
 module.exports = React.CreateClass({
 
+  mixins: [classes],
+
   /**
    * @function hide
    * @description Hide the dialog window when open.
    */
   hide: function () {
-    this.refs.modal.hide();
+    this.setState({
+      active: true
+    });
   },
 
   /**
@@ -18,41 +22,37 @@ module.exports = React.CreateClass({
    * @description Show the dialog window when hidden.
    */
   show: function () {
-    this.refs.modal.show();
+    this.setState({
+      active: true
+    })
   },
 
   propTypes: {
     title: React.PropTypes.string,
-    actions: React.PropTypes.array
+    action: React.PropTypes.string,
+    message: React.PropTypes.string
   },
 
   getDefaultProps: function () {
     return {
-      actions: []
+      action: 'Close'
     };
   },
 
   render: function () {
 
-    var classes = 
+    var classes = this.getClass('dialog', {
+      'dialog-active': this.state.active || false,
+    });
 
     return (
       <div ref="modal" className={classes}>
-
-        <h3 className="dialog-title">
-          {this.props.title}
-        </h3>
-
-        <section ref="dialogContent" className="dialog-content">
-          {this.props.children}
-        </section>
-
-        <div className="dialog-actions">
-          <div className="dialog-actions-right">{actions}</div>
-        </div>
-
+        <div className="dialog-title">{this.props.title}</div>
+        <section ref="dialogContent" className="dialog-content">{this.props.message}</section>
+        <div className="dialog-action"{this.props.action}></div>
       </div>
     );
+
   },
 
 });
