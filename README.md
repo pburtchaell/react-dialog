@@ -1,25 +1,9 @@
-# react-dialog [![npm version](https://badge.fury.io/js/react-dialog.svg)](http://badge.fury.io/js/react-dialog) [![Dependency Status](https://david-dm.org/pburtchaell/react-dialog.svg)](https://david-dm.org/pburtchaell/react-dialog)
+# React Dialog
 
-*Warning: this is a major version zero release. The component is still under development and the API may change at any time. Please report issues and bugs [on GitHub](https://github.com/pburtchaell/react-dialog/issues).*
+## Warning
 
-## Quickstart
+As of 2018 July 7, this project is depreciated and unmaintained. I no longer manage the package name on npm.
 
-1. Install with npm: `npm install react-dialog`
-2. Require the component: `var Dialog = require('react-dialog')`
-
-## Usage
-
-### Props
-
-### Methods
-
-### Events
-
-## DOM Node Tree
-
-
-
----
-Made with care by [Patrick Burtchaell](http://twitter.com/pburtchaell) in New Orleans.
-
-Copyright 2015 Patrick Burtchaell. Licensed MIT.
+Good alternatives include:
+- [react-modal](https://github.com/reactjs/react-modal)
+- [react-component/dialog](https://github.com/react-component/dialog)
